@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1>Student List</h1>
+
+        <table>
+            <tr>
+                <td>id</td>
+                <td>name</td>
+                <td>age</td>
+                <td>class</td>
+            </tr>
+            <tr>
+                <%for(let i = 0; i<list.length; i++) {%>
+                    <tr>
+                        <td><%list[i].id%></td>
+                        <td><%list[i].name%></td>
+                        <td><%list[i].age%></td>
+                        <td><%list[i].class%></td>
+                    </tr>
+                <%};%>    
+            </tr>
+        </table>
+    </body>
+</html>

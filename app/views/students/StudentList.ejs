@@ -2,7 +2,7 @@
     <body>
         <h1>Student List</h1>
 
-        <table>
+        <table border="1px">
             <tr>
                 <td>id</td>
                 <td>name</td>
@@ -12,13 +12,14 @@
             <tr>
                 <%for(let i = 0; i<list.length; i++) {%>
                     <tr>
-                        <td><%list[i].id%></td>
-                        <td><%list[i].name%></td>
-                        <td><%list[i].age%></td>
-                        <td><%list[i].class%></td>
+                        <td><%=list[i].id%></td>
+                        <td><%=list[i].name%></td>
+                        <td><%=list[i].age%></td>
+                        <td><%=list[i].class%></td>
                     </tr>
-                <%};%>    
+                <%}%>    
             </tr>
         </table>
+        <input 
     </body>
 </html>

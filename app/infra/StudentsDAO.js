@@ -8,7 +8,7 @@ StudentsDAO.prototype.list = function(callback) {
     this._connection.query('SELECT * FROM students', callback);
 }
 
-StudentsDAO.prototype.save = function(callback) {
+StudentsDAO.prototype.save = function(student, callback) {
 
     this._connection.query('INSERT INTO students SET ?', student, callback);
 }
